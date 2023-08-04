@@ -1,1 +1,14 @@
-<p>parent-page works!</p>
+<h3>Page Status is: {{ status }}</h3>
+
+<button (click)="toggleStatus()">Toggle Status</button>
+
+<div *ngIf="status else elseTemplate">
+  <p>This element is shown if status is true</p>
+</div>
+
+<ng-template #elseTemplate>
+  <div>
+    <p>Else Template</p>
+    <button (click)="toggleStatus()">Status to true</button>
+  </div>
+</ng-template>

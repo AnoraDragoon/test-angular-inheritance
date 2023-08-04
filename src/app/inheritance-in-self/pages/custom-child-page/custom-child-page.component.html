@@ -1,0 +1,22 @@
+<h3>Custom Status from parent is: {{ status }}</h3>
+
+<button (click)="toggleStatus()">Toggle Form</button>
+<hr>
+<div *ngIf="status else elseTemplate">
+  <div>
+    <label for="first-name">Name</label>
+    <input id="first-name" type="text">
+  </div>
+  <div>
+    <label for="last-name">Last name</label>
+    <input id="last-name" type="text">
+  </div>
+  <button (click)="hideForm()">Hide form</button>
+</div>
+
+<ng-template #elseTemplate>
+  <div>
+    <p>Else Template</p>
+    <button (click)="showForm()">Show Form</button>
+  </div>
+</ng-template>
