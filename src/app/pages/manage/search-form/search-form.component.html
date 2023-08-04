@@ -1,0 +1,7 @@
+<p>search-form works!</p>
+
+<form [formGroup]="form">
+  <input type="text" formControlName="search">
+  <input type="text" formControlName="date">
+  <input type="button" value="Search" (click)="onSubmit()">
+</form>

@@ -1,1 +1,9 @@
 <p>manage works!</p>
+
+<div>
+  <app-search-form [form]="form" (submit)="showData($event)"></app-search-form>
+</div>
+
+<hr>
+
+<app-table *ngIf="status"></app-table>
