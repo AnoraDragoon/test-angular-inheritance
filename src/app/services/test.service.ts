@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class TestService {
 
-  constructor() { }
+private status: Subject<string> = new Subject();
+public status$: Observable<string> = this.status.asObservable();
+
+    constructor() { }
 }
