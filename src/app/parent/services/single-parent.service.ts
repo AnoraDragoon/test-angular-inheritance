@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root'
+  providedIn: 'root'
 })
-export class ParentService {
+export class SingleParentService {
 
     private readonly status = new BehaviorSubject<number>(0);
     public readonly status$: Observable<number> = this.status.asObservable();

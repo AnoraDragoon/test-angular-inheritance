@@ -13,8 +13,8 @@ const routes: Routes = [
         pathMatch: 'full'
     },
     { path: 'manage', component: ManageComponent },
-    { path: 'self', loadChildren: () => import('./inheritance-in-self/inheritance-in-self.module').then(m=> m.InheritanceInSelfModule)},
-    { path: 'library', loadChildren: () => import('./inheritance-from-library/inheritance-from-library.module').then(m=> m.InheritanceFromLibraryModule)},
+    { path: 'parent', loadChildren: () => import('./parent/parent.module').then(m=> m.ParentModule)},
+    { path: 'child', loadChildren: () => import('./child/child.module').then(m=> m.ChildModule)},
     { path: '**', component: NotFoundComponent }
 ];
 

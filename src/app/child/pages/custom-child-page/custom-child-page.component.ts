@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ParentPageComponent } from '../parent-page/parent-page.component';
+import { SingleParentPageComponent } from '../../../parent/pages/single-parent-page/single-parent-page.component';
 
 @Component({
     selector: 'app-custom-child-page',
     templateUrl: './custom-child-page.component.html',
     styleUrls: ['./custom-child-page.component.scss']
 })
-export class CustomChildPageComponent extends ParentPageComponent {
+export class CustomChildPageComponent extends SingleParentPageComponent {
 
     constructor() {
         super();

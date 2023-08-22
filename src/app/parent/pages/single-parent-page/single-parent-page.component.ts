@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-parent-page',
-    templateUrl: './parent-page.component.html',
-    styleUrls: ['./parent-page.component.scss']
+  selector: 'app-parent-single-page',
+  templateUrl: './single-parent-page.component.html',
+  styleUrls: ['./single-parent-page.component.scss']
 })
-export class ParentPageComponent implements OnInit {
+export class SingleParentPageComponent implements OnInit {
 
     status: boolean = false;
 

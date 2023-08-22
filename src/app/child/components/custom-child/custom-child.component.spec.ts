@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParentPageComponent } from './parent-page.component';
+import { CustomChildComponent } from './custom-child.component';
 
-describe('ParentPageComponent', () => {
-  let component: ParentPageComponent;
-  let fixture: ComponentFixture<ParentPageComponent>;
+describe('CustomChildComponent', () => {
+  let component: CustomChildComponent;
+  let fixture: ComponentFixture<CustomChildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ParentPageComponent ]
+      declarations: [ CustomChildComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParentPageComponent);
+    fixture = TestBed.createComponent(CustomChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
