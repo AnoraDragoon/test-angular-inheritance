@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { SingleParentComponent } from 'src/app/parent/components/single-parent/single-parent.component';
 
 @Component({
-  selector: 'app-custom-child',
-  templateUrl: './custom-child.component.html',
-  styleUrls: ['./custom-child.component.scss']
+    selector: 'app-custom-child',
+    templateUrl: './custom-child.component.html',
+    styleUrls: ['./custom-child.component.scss']
 })
-export class CustomChildComponent implements OnInit {
+export class CustomChildComponent extends SingleParentComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+        super();
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+
+    }
 
 }

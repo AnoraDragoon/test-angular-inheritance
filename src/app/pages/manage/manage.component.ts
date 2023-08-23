@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { TestService } from 'src/app/services/test.service';
 
 @Component({
     selector: 'app-manage',
@@ -15,7 +14,7 @@ export class ManageComponent implements OnInit {
         date: '',
     })
 
-    constructor(private testService: TestService, private fb: FormBuilder) { }
+    constructor(private fb: FormBuilder) { }
 
     ngOnInit(): void {
     }

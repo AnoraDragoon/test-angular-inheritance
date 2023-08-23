@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SingleParentComponent } from '../../../parent/components/single-parent/single-parent.component';
 
 @Component({
@@ -8,11 +8,11 @@ import { SingleParentComponent } from '../../../parent/components/single-parent/
 })
 export class ChildComponent extends SingleParentComponent {
 
+    public title: string = 'child works!!';
+
+
     constructor() {
         super();
     }
-
-    // ngOnInit(): void {
-    // }
 
 }
