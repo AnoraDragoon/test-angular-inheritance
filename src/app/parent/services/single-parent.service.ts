@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class SingleParentService {
 
-    private readonly status = new BehaviorSubject<number>(0);
+    protected readonly status = new BehaviorSubject<number>(0);
     public readonly status$: Observable<number> = this.status.asObservable();
 
     constructor() { }
