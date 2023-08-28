@@ -10,4 +10,8 @@ export class StandardDepChildService extends StandardDepService {
     constructor(protected logger: Logger) {
         super(logger);
     }
+
+    setStatusToOne(): void {
+        this.status.next(1);
+    }
 }

@@ -25,7 +25,8 @@ import { ServiceDepParentComponent } from './components/service-dep-parent/servi
     ],
     exports: [
         SingleParentComponent,
-        SingleParentPageComponent
+        ServiceParentComponent,
+        ServiceDepParentComponent
     ]
 })
 export class ParentModule { }
