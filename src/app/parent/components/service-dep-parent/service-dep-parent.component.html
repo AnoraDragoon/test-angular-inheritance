@@ -1,0 +1,7 @@
+<div>
+  <h2>{{title}}</h2>
+
+  <p>Status is <span>({{depStatus$ | async}})</span>!!!</p>
+
+  <button [disabled]="!(depStatus$ | async)" type="button" (click)="setDepStatusCero()">Set Status to 0</button>
+</div>

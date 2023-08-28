@@ -1,1 +1,20 @@
-<p>service-parent-page works!</p>
+<h1>{{title}}</h1>
+
+<button type="button" (click)="generateLog()">Generate log</button>
+<h3>SingleParentService Status</h3>
+<p *ngIf="status; else statusTemplate">Status is <span>({{status}})</span>!!!</p>
+<ng-template #statusTemplate>
+  <p>Status is not activated. <span>({{status}})</span></p>
+</ng-template>
+<button type="button" (click)="toggleStatus()">Toggle Status</button>
+
+<hr>
+<app-service-parent></app-service-parent>
+
+<hr>
+<h3>StandardDepService Status</h3>
+<p>Status is <span>({{ depStatus$ | async }})</span>!!!</p>
+<button type="button" (click)="toggleDepStatus()">Toggle Dev Status</button>
+
+<hr>
+<app-service-dep-parent></app-service-dep-parent>

@@ -7,6 +7,7 @@ import { SingleParentPageComponent } from './pages/single-parent-page/single-par
 import { SingleParentComponent } from './components/single-parent/single-parent.component';
 import { ServiceParentPageComponent } from './pages/service-parent-page/service-parent-page.component';
 import { ServiceParentComponent } from './components/service-parent/service-parent.component';
+import { ServiceDepParentComponent } from './components/service-dep-parent/service-dep-parent.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ServiceParentComponent } from './components/service-parent/service-pare
         SingleParentPageComponent,
         SingleParentComponent,
         ServiceParentPageComponent,
-        ServiceParentComponent
+        ServiceParentComponent,
+        ServiceDepParentComponent
     ],
     imports: [
         CommonModule,
