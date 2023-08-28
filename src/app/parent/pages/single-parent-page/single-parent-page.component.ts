@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingleParentPageComponent implements OnInit {
 
+    readonly title: string = 'single-parent-page';
     status: boolean = false;
 
 

@@ -11,6 +11,9 @@ import { Logger } from 'src/app/services/logger.service';
 })
 export class ServiceChildPageComponent extends ServiceParentPageComponent implements OnInit {
 
+    readonly title: string = 'service-child-page';
+
+
     constructor(protected logger: Logger, protected singleParentService: SingleParentService, protected standardDepService: StandardDepService) {
         super(logger, singleParentService, standardDepService)
     }

@@ -8,6 +8,9 @@ import { SingleParentPageComponent } from '../../../parent/pages/single-parent-p
 })
 export class CustomChildPageComponent extends SingleParentPageComponent {
 
+    readonly title: string = 'custom-child-page';
+
+
     constructor() {
         super();
     }

@@ -8,6 +8,7 @@ import { CustomChildPageComponent } from './pages/custom-child-page/custom-child
 import { ChildPageComponent } from './pages/child-page/child-page.component';
 import { ParentModule } from '../parent/parent.module';
 import { ServiceChildPageComponent } from './pages/service-child-page/service-child-page.component';
+import { CustomServiceChildPageComponent } from './pages/custom-service-child-page/custom-service-child-page.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ServiceChildPageComponent } from './pages/service-child-page/service-ch
         CustomChildPageComponent,
         ChildComponent,
         CustomChildComponent,
-        ServiceChildPageComponent
+        ServiceChildPageComponent,
+        CustomServiceChildPageComponent
     ],
     imports: [
         CommonModule,
