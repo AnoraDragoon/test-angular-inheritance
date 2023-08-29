@@ -8,6 +8,9 @@ import { SingleParentComponent } from './components/single-parent/single-parent.
 import { ServiceParentPageComponent } from './pages/service-parent-page/service-parent-page.component';
 import { ServiceParentComponent } from './components/service-parent/service-parent.component';
 import { ServiceDepParentComponent } from './components/service-dep-parent/service-dep-parent.component';
+import { InputOutputPageComponent } from './pages/input-output-page/input-output-page.component';
+import { InputOutputParentComponent } from './components/input-output-parent/input-output-parent.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,17 +19,21 @@ import { ServiceDepParentComponent } from './components/service-dep-parent/servi
         SingleParentComponent,
         ServiceParentPageComponent,
         ServiceParentComponent,
-        ServiceDepParentComponent
+        ServiceDepParentComponent,
+        InputOutputPageComponent,
+        InputOutputParentComponent
     ],
     imports: [
         CommonModule,
         ParentRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        FormsModule
     ],
     exports: [
         SingleParentComponent,
         ServiceParentComponent,
-        ServiceDepParentComponent
+        ServiceDepParentComponent,
+        InputOutputParentComponent
     ]
 })
 export class ParentModule { }

@@ -10,6 +10,9 @@ import { ParentModule } from '../parent/parent.module';
 import { ServiceChildPageComponent } from './pages/service-child-page/service-child-page.component';
 import { CustomServiceChildPageComponent } from './pages/custom-service-child-page/custom-service-child-page.component';
 import { CustomServiceChildComponent } from './components/custom-service-child/custom-service-child.component';
+import { InputOutputChildComponent } from './components/input-output-child/input-output-child.component';
+import { InputOutputChildPageComponent } from './pages/input-output-child-page/input-output-child-page.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,12 +23,15 @@ import { CustomServiceChildComponent } from './components/custom-service-child/c
         CustomChildComponent,
         ServiceChildPageComponent,
         CustomServiceChildPageComponent,
-        CustomServiceChildComponent
+        CustomServiceChildComponent,
+        InputOutputChildComponent,
+        InputOutputChildPageComponent
     ],
     imports: [
         CommonModule,
         ChildRoutingModule,
-        ParentModule
+        ParentModule,
+        FormsModule
     ]
 })
 export class ChildModule { }

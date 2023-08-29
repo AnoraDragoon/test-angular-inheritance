@@ -8,7 +8,7 @@ import { StandardDepService } from '../../services/standard-dep.service';
 })
 export class ServiceDepParentComponent {
 
-    title: string = 'service-dep-parent works!';
+    readonly title: string = 'service-dep-parent works!';
     depStatus$ = this.standardDepService.status$;
 
 

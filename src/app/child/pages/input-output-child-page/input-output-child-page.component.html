@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<hr>
+
+<h3 *ngIf="user; else elseTemplate">Page user name is: {{ user.name }}</h3>
+<p>{{user?.id}}</p>
+
+<ng-template #elseTemplate>
+  <p>There is not user!!!</p>
+  <button (click)="loadUser()">Load user</button>
+</ng-template>
+
+<hr>
+<app-input-output-parent [componentUser]="user" (changeUserName)="updateUserName($event)"></app-input-output-parent>
+
+<hr>
+<app-input-output-child [componentUser]="user" (changeUserName)="updateUserName($event)"></app-input-output-child>

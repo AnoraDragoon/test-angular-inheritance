@@ -4,6 +4,7 @@ import { ChildPageComponent } from './pages/child-page/child-page.component';
 import { CustomChildPageComponent } from './pages/custom-child-page/custom-child-page.component';
 import { ServiceChildPageComponent } from './pages/service-child-page/service-child-page.component';
 import { CustomServiceChildPageComponent } from './pages/custom-service-child-page/custom-service-child-page.component';
+import { InputOutputChildPageComponent } from './pages/input-output-child-page/input-output-child-page.component';
 
 const routes: Routes = [
     {
@@ -21,7 +22,12 @@ const routes: Routes = [
     {
         path: 'custom-service',
         component: CustomServiceChildPageComponent
+    },
+    {
+        path: 'input-output',
+        component: InputOutputChildPageComponent
     }
+
 ];
 
 @NgModule({
