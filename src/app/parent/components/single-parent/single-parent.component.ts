@@ -13,7 +13,6 @@ export class SingleParentComponent implements OnInit {
     protected protectedNumber: number = 0;
 
 
-
     constructor() { }
 
     ngOnInit(): void {

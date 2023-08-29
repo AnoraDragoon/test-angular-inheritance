@@ -4,7 +4,7 @@ import { SingleParentComponent } from 'src/app/parent/components/single-parent/s
 @Component({
     selector: 'app-custom-child',
     templateUrl: './custom-child.component.html',
-    styleUrls: ['./custom-child.component.scss']
+    styleUrls: ['../../../parent/components/single-parent/single-parent.component.scss', './custom-child.component.scss']
 })
 export class CustomChildComponent extends SingleParentComponent implements OnInit {
 

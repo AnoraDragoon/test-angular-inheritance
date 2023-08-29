@@ -15,7 +15,7 @@ export class StandardDepService {
 
     setStatus(statusNumber: number): void {
         this.status.next(statusNumber);
-        this.logger.log(`status change to ${statusNumber}`);
+        this.logger.log(`StandardDepService: status change to ${statusNumber}.`);
     }
 
 }

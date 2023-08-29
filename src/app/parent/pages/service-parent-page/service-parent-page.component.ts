@@ -15,7 +15,11 @@ export class ServiceParentPageComponent implements OnInit {
     depStatus$ = this.standardDepService.status$;
     depStatus: number = 0;
 
-    constructor(protected logger: Logger, protected singleParentService: SingleParentService, protected standardDepService: StandardDepService) { }
+    constructor(
+        protected logger: Logger,
+        protected singleParentService: SingleParentService,
+        protected standardDepService: StandardDepService
+    ) { }
 
     ngOnInit(): void {
         this.singleParentService.status$.subscribe(status => {
