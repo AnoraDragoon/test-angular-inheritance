@@ -13,6 +13,8 @@ import { CustomServiceChildComponent } from './components/custom-service-child/c
 import { InputOutputChildComponent } from './components/input-output-child/input-output-child.component';
 import { InputOutputChildPageComponent } from './pages/input-output-child-page/input-output-child-page.component';
 import { FormsModule } from '@angular/forms';
+import { LifecircleChildPageComponent } from './pages/lifecircle-child-page/lifecircle-child-page.component';
+import { LifecircleChildComponent } from './components/lifecircle-child/lifecircle-child.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { FormsModule } from '@angular/forms';
         CustomServiceChildPageComponent,
         CustomServiceChildComponent,
         InputOutputChildComponent,
-        InputOutputChildPageComponent
+        InputOutputChildPageComponent,
+        LifecircleChildPageComponent,
+        LifecircleChildComponent
     ],
     imports: [
         CommonModule,

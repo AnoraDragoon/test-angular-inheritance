@@ -11,6 +11,8 @@ import { ServiceDepParentComponent } from './components/service-dep-parent/servi
 import { InputOutputPageComponent } from './pages/input-output-page/input-output-page.component';
 import { InputOutputParentComponent } from './components/input-output-parent/input-output-parent.component';
 import { FormsModule } from '@angular/forms';
+import { LifecircleParentComponent } from './components/lifecircle-parent/lifecircle-parent.component';
+import { LifecircleParentPageComponent } from './pages/lifecircle-parent-page/lifecircle-parent-page.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FormsModule } from '@angular/forms';
         ServiceParentComponent,
         ServiceDepParentComponent,
         InputOutputPageComponent,
-        InputOutputParentComponent
+        InputOutputParentComponent,
+        LifecircleParentComponent,
+        LifecircleParentPageComponent
     ],
     imports: [
         CommonModule,
@@ -33,7 +37,8 @@ import { FormsModule } from '@angular/forms';
         SingleParentComponent,
         ServiceParentComponent,
         ServiceDepParentComponent,
-        InputOutputParentComponent
+        InputOutputParentComponent,
+        LifecircleParentComponent
     ]
 })
 export class ParentModule { }

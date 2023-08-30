@@ -11,6 +11,9 @@
       <li>
         <a [routerLink]="['/parent', 'input-output']" routerLinkActive="router-link-active">Parent input output</a>
       </li>
+      <li>
+        <a [routerLink]="['/parent', 'lifecircle']" routerLinkActive="router-link-active">Parent lifecircle</a>
+      </li>
     </ul>
     <ul id="child-menu">
       <li>
@@ -27,6 +30,9 @@
       </li>
       <li>
         <a [routerLink]="['/child', 'input-output']" routerLinkActive="router-link-active">Custom input output</a>
+      </li>
+      <li>
+        <a [routerLink]="['/child', 'lifecircle']" routerLinkActive="router-link-active">Child lifecircle</a>
       </li>
     </ul>
   </aside>

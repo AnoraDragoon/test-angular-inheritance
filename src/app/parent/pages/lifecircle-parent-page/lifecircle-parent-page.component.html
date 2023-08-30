@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<button type="button" (click)="toggleStatus()">Toggle Status</button>
+<button type="button" (click)="toggleName()">Toggle Name</button>
+
+<hr>
+<div *ngIf="status">
+  <app-lifecircle-parent [data]="name"></app-lifecircle-parent>
+</div>
