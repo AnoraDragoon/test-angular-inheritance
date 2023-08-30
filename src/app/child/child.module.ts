@@ -15,6 +15,8 @@ import { InputOutputChildPageComponent } from './pages/input-output-child-page/i
 import { FormsModule } from '@angular/forms';
 import { LifecircleChildPageComponent } from './pages/lifecircle-child-page/lifecircle-child-page.component';
 import { LifecircleChildComponent } from './components/lifecircle-child/lifecircle-child.component';
+import { ViewchildChildPageComponent } from './pages/viewchild-child-page/viewchild-child-page.component';
+import { ViewchildChildComponent } from './components/viewchild-child/viewchild-child.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { LifecircleChildComponent } from './components/lifecircle-child/lifecirc
         InputOutputChildComponent,
         InputOutputChildPageComponent,
         LifecircleChildPageComponent,
-        LifecircleChildComponent
+        LifecircleChildComponent,
+        ViewchildChildPageComponent,
+        ViewchildChildComponent
     ],
     imports: [
         CommonModule,

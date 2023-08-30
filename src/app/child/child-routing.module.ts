@@ -6,6 +6,7 @@ import { ServiceChildPageComponent } from './pages/service-child-page/service-ch
 import { CustomServiceChildPageComponent } from './pages/custom-service-child-page/custom-service-child-page.component';
 import { InputOutputChildPageComponent } from './pages/input-output-child-page/input-output-child-page.component';
 import { LifecircleChildPageComponent } from './pages/lifecircle-child-page/lifecircle-child-page.component';
+import { ViewchildChildPageComponent } from './pages/viewchild-child-page/viewchild-child-page.component';
 
 const routes: Routes = [
     {
@@ -31,6 +32,10 @@ const routes: Routes = [
     {
         path: 'lifecircle',
         component: LifecircleChildPageComponent
+    },
+    {
+        path: 'viewchild',
+        component: ViewchildChildPageComponent
     }
 
 ];

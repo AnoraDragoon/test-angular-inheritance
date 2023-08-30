@@ -4,6 +4,7 @@ import { SingleParentPageComponent } from './pages/single-parent-page/single-par
 import { ServiceParentPageComponent } from './pages/service-parent-page/service-parent-page.component';
 import { InputOutputPageComponent } from './pages/input-output-page/input-output-page.component';
 import { LifecircleParentPageComponent } from './pages/lifecircle-parent-page/lifecircle-parent-page.component';
+import { ViewchildParentPageComponent } from './pages/viewchild-parent-page/viewchild-parent-page.component';
 
 const routes: Routes = [
     {
@@ -21,6 +22,10 @@ const routes: Routes = [
     {
         path: 'lifecircle',
         component: LifecircleParentPageComponent
+    },
+    {
+        path: 'viewchild',
+        component: ViewchildParentPageComponent
     }
 
 ];

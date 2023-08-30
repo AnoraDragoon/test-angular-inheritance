@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SingleParentComponent implements OnInit {
 
     @Input() inputText: string = '';
-    public readonly title: string = 'single-parent works!!'
+    public readonly title: string = 'single-parent works!!';
     private privateStatus: boolean = false;
     protected protectedNumber: number = 0;
 
