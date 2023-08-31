@@ -6,7 +6,7 @@ import { SingleParentPageComponent } from '../../../parent/pages/single-parent-p
     templateUrl: './custom-child-page.component.html',
     styleUrls: ['./custom-child-page.component.scss']
 })
-export class CustomChildPageComponent extends SingleParentPageComponent {
+export class CustomChildPageComponent extends SingleParentPageComponent implements OnInit {
 
     readonly title: string = 'custom-child-page';
 

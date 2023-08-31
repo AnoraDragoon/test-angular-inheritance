@@ -1,11 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-single-parent',
-  templateUrl: './single-parent.component.html',
-  styleUrls: ['./single-parent.component.scss']
+    selector: 'app-single-parent',
+    templateUrl: './single-parent.component.html',
+    styleUrls: ['./single-parent.component.scss']
 })
-export class SingleParentComponent implements OnInit {
+export class SingleParentComponent {
 
     @Input() inputText: string = '';
     public readonly title: string = 'single-parent works!!';
@@ -14,10 +14,6 @@ export class SingleParentComponent implements OnInit {
 
 
     constructor() { }
-
-    ngOnInit(): void {
-        console.log('Init ParentComponent');
-    }
 
     public toggleStatus(): void {
         this.privateStatus = !this.privateStatus;
@@ -34,4 +30,5 @@ export class SingleParentComponent implements OnInit {
     getStatus(): boolean {
         return this.privateStatus;
     }
+
 }

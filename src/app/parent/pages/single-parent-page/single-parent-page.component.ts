@@ -14,10 +14,14 @@ export class SingleParentPageComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
-        console.log('Init ParentPageComponent');
+        console.log(this.getLog());
     }
 
     toggleStatus(): void {
         this.status = !this.status;
+    }
+
+    getLog(): string {
+        return `Init ${this.title}`;
     }
 }
